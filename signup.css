@@ -1,0 +1,133 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 5% 20% 5% 20%;
+}
+*{
+    box-sizing: border-box;
+}
+#signup-box
+{
+    width: 100%;
+}
+img{
+    margin-bottom: 12%;
+    animation-name: spin;
+    animation-duration: 2s;
+}
+
+@keyframes spin {
+    100% {
+      -ms-transform: rotate(360deg); /* IE 9 */
+    -webkit-transform: rotate(360deg); /* Safari prior 9.0 */
+    transform: rotate(360deg); /* Standard syntax */
+   }
+    }
+.left-box
+{
+    float: left;
+    width: 50%;
+    color: white;
+    font-size: 20px;
+    line-height: 35px;
+    text-align: center;
+    padding: 15% 7% 20% 7%;
+    background-image: url(https://res.cloudinary.com/dlq9o1289/image/upload/v1568737788/Image_jyy9df.png);
+    background-size: 100% 100%;
+}
+
+
+.right-box
+{
+    float: right;
+    width: 50%;
+    background-color: #E2E8F0;
+    padding: 5% 0 0 0;
+}
+
+.logText{
+    margin-top: 0;
+    padding-bottom: 10%;
+    text-align: center;
+    color: 	#5A5A5A;
+}
+a{
+    text-decoration: none;
+    color: #3182CE;
+}
+.createAccount{
+    text-align: center;
+    color: #5A5A5A;
+    font-size: 30px;
+    margin-bottom: -5px;
+}
+input[type="text"],
+input[type="password"]
+{
+    width: 70%;
+    height: 40px;
+    margin: 2.5% 15% 2.5% 15%;
+    border: 1px solid #E2E8F0;
+    border-radius: 4px;
+    outline: none;
+}
+
+input[type="submit"]
+{
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #E2E8F0;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #3182CE;
+    margin: 15% 15% 15% 15%;
+}
+#submit:hover{
+    cursor: pointer;
+  }
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+    body{
+        font-family: 'Roboto', sans-serif;
+        margin: 0 0 0 0;
+    }
+}
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    body{
+        font-family: 'Roboto', sans-serif;
+        margin: 0 0 0 0;
+    }
+    img{
+        margin: 30% 20% 10% 20%;
+    }
+    .left-box{
+        width: 100%;
+        font-size: 18px;
+        line-height: 30px;
+        height: 490px;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+    .right-box{
+        float: left;
+        width: 100%;
+        height: 500px;
+        
+    }
+    .logText{
+        font-size: 15px;
+    }
+    .createAccount{
+        font-size: 25px;
+    }
+}
